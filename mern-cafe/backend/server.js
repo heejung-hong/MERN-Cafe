@@ -29,6 +29,7 @@ app.use(express.static(path.join(path.dirname(__dirname), 'frontend', 'dist')))
 
 
 // Put API routes here, before the "catch all" route
+app.use('/api/users', require('./routes/api/users'));
 
 
 // The following "catch all" route (note the *) is necessary
