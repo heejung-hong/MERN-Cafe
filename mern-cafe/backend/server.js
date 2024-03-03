@@ -1,6 +1,7 @@
 /* Require modules ----------------------------------- */
 // Always require and configure near the top
 require('dotenv').config();
+require('./models/index')
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
