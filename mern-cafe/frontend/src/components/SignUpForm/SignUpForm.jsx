@@ -30,7 +30,7 @@ export default class SignUpForm extends Component {
       const formData = {name, email, password}; // create new object that contains name, email, password
       // The promise returned by the signUp service method will resolve to the user object included in the payload of the JSON Web Token (JWT)
       const user = await signUp(formData); // signUp will return a promise
-      console.log(user);
+      // console.log(user);
       this.props.setUser(user);
     } catch {
       // an error occurred
